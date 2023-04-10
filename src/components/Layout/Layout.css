@@ -1,51 +1,42 @@
 :root {
   --border-radius: 4px;
   --color-text: #333;
-  --color-primary: #7026b9;
-  --color-code-bg: #fff4db;
-  --color-code: #8a6534;
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-    "Courier New", monospace;
-  --font-lg: 18px;
-  --font-md: 16px;
-  --font-sm: 14px;
-  --font-sx: 12px;
-  --line-height-loose: 1.75;
-  --line-height-normal: 1.5;
-  --line-height-dense: 1.1;
-  --space-1: 4px;
-  --space-2: 8px;
-  --space-3: 16px;
-  --space-4: 24px;
-  --space-5: 32px;
-  --space-6: 64px;
-  --size-content: 54rem;
-  --size-gutter: var(--space-5);
-  --size-gap: var(--space-6);
+  --font-sans: "Nunito Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji";
+  --font-mono: "Nunito Sans", "Courier New", monospace;
+
+  --textsize_h1: 76px;
+  --textsize_h2: 40px;
+  --textsize_h3: 24px;
+  --lineheight_h3: 28px;
+
+  --theme_color: "#BFA272";
 }
 html {
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
-  font: sans-serif;
-  font-size: var(--font-md);
-  line-height: var(--line-height-normal);
-  overflow-y: scroll;
-}
-body {
+
+  font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+  height: -webkit-fill-available; 
+  padding: 0;
+  margin: 0;
+  -webkit-text-size-adjust: 100%; 
+  text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  color: var(--color-text);
-  font-family: sans-serif;
-  font-family: var(--font-sans);
-  font-weight: normal;
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  background-color: #fff;
   margin: 0;
-  word-wrap: break-word;
+  min-height: 100vh;
+  min-height: -webkit-fill-available; 
+  overflow-x: hidden;
+  font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
 }
 a {
   background-color: transparent;
-  color: var(--color-primary);
   text-decoration: none;
   font-weight: 500;
   text-decoration: underline;
@@ -78,7 +69,7 @@ h1 {
   letter-spacing: -0.01em;
 }
 h1 > b {
-  color: var(--color-primary);
+  
 }
 img {
   border-style: none;
@@ -221,4 +212,130 @@ pre code:after,
 pre tt:before,
 pre tt:after {
   content: none;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.u-ovh {
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap,
+.flexWrap {
+  flex-wrap: wrap;
+}
+
+.flexGrow,
+.flex-grow {
+  flex: 1;
+}
+
+.inlineFlex,
+.inline-flex {
+  display: inline-flex;
+}
+
+.flex-ybaseline,
+.flexYBaseline {
+  align-items: baseline;
+}
+
+.flex-last-baseline,
+.flexLastBaseline {
+  align-items: baseline;
+  align-items: last baseline;
+}
+
+.flex-ycenter,
+.flexYcenter {
+  align-items: center;
+}
+
+.flex-xcenter,
+.flexXcenter {
+  justify-content: center;
+}
+
+.flex-between,
+.flexBetween {
+  justify-content: space-between !important;
+}
+
+.flexStart,
+.flex-start {
+  align-self: flex-start;
+}
+
+.flexEnd,
+.flex-end {
+  align-items: flex-end;
+}
+
+.flex-none,
+.flexNone {
+  flex: none;
+}
+
+.justifyFlexEnd {
+  justify-content: flex-end;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mainWrapper {
+}
+
+.leftSection {
+  width: 77px;
+  position: fixed;
+  left: 0;
+  inset-block: 0;
+
+  background-color: #fff;
+  box-shadow: 0px 1px 2px #00000045;
+  padding-inline: 14px;
+  padding-block: 49px;
+  display: none;
+}
+
+.rightSection {
+  width: 100%;
+  padding-inline: 10px;
+}
+
+[class*="hideSidebar"] {
+  display: none;
+}
+
+
+
+@media screen and (min-width: 767px) {
+  .rightSection {
+    width: calc(100% - 77px);
+    padding-inline: 52px;
+    margin-inline-start: 77px;
+  }
+
+  .leftSection {
+    display: block;
+  }
 }

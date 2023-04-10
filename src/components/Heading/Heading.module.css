@@ -1,0 +1,33 @@
+.h1,
+.h2,
+.h3,
+.h4 {
+  line-height: 1.3;
+}
+
+.h1 {
+  font-size: 1.383rem;
+  margin-block-end: 1.383rem;
+}
+
+.h2 {
+  font-size: var(--textsize_h2);
+  line-height: var(--lineheight_h2);
+  font-weight: 500;
+  margin-bottom: var(--lineheight_h2);
+}
+.h3 {
+  font-size: var(--textsize_h3);
+  line-height: var(--lineheight_h3);
+  font-weight: 400;
+}
+
+.h4 {
+  font-size: 1.138rem;
+  margin-block-end: 0.5rem;
+}
+
+.h5 {
+  font-size: 1rem;
+  margin-block-end: 0.5rem;
+}

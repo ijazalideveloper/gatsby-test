@@ -1,0 +1,56 @@
+.navOuterWrap {
+  /* padding-block: 24px 18px; */
+  padding-block: 10px;
+  border-bottom: 2px solid #e8e8e8;
+}
+
+.userInfo {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background-color: #000;
+  color: #fff;
+  place-content: center;
+  line-height: 44px;
+}
+
+.bellIcon {
+  margin-inline-end: 10px;
+  position: relative;
+}
+
+.notificationDot {
+  width: 12px;
+  height: 12px;
+  background-color: #e82b2b;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.hamburger {
+  margin-block-end: 53px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 22px;
+  height: 2px;
+  background-color: #000;
+  display: block;
+  margin: 4px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+
+@media screen and (min-width: 767px) {
+  .navOuterWrap {
+    padding-block: 24px 18px;
+  }
+  .bellIcon {
+    margin-inline-end: 30px;
+  }
+}
