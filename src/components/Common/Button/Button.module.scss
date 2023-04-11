@@ -1,0 +1,96 @@
+.btn {
+  background-color: green;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.72em 0.75em;
+  text-transform: capitalize;
+
+  > svg {
+    flex: none;
+    fill: currentColor;
+    margin-right: 4px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: shade($bg-footer, 10%);
+  }
+
+  &:active {
+    box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2) inset;
+  }
+
+  &[disabled] {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+}
+
+.bordered {
+  background-color: transparent;
+  border-color: currentColor;
+  color: green;
+
+  &:hover,
+  &:focus {
+    background-color: green;
+  }
+}
+
+.link {
+  background-color: transparent;
+  color: red;
+  font-weight: 400;
+
+  &:hover,
+  &:focus {
+    background-color: inherit;
+    color: yellow;
+    text-decoration: underline;
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.default {
+  background-color: transparent;
+  color: var(--color_fasset_midgreen);
+  font-weight: 400;
+
+  &:hover,
+  &:focus,
+  .active {
+    background-color: inherit;
+    // color: $link-color;
+  }
+}
+
+.sm {
+  font-size: 0.875rem;
+  padding: 0.32em 0.5em;
+}
+
+.lg {
+  font-size: 1.25rem;
+  padding: 0.7em 1em;
+}
+
+.block {
+  width: 100%;
+}
+
+.wide {
+  min-width: 160px;
+  padding-inline: 1.6em;
+}
+
+.pill {
+  border-radius: 32px;
+  padding-inline: 1em;
+}

@@ -1,0 +1,20 @@
+@keyframes loading {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loading {
+    --spinner-size: 1.2em;
+  
+    width: var(--spinner-size);
+    height: var(--spinner-size);
+    border-radius: 50%;
+    background: transparent;
+    border-block: 0.16em solid currentColor;
+    border-inline-end: 0.16em solid currentColor;
+    border-inline-start: 0.16em solid transparent;
+    animation: loading 0.8s infinite linear;
+    margin-inline-end: 0.25em;
+  }
+  
