@@ -1,5 +1,5 @@
 import React from "react"
-import * as styles from "./Amenities.module.css"
+import * as styles from "./Amenities.module.scss"
 import { StaticImage } from "gatsby-plugin-image"
 import { amentiesDataList } from "../../StaticData/staticData"
 

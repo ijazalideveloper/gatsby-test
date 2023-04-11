@@ -1,0 +1,20 @@
+.footerWrap {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  background: #000;
+  padding: 30px 0;
+
+  p {
+    color: #fff;
+    margin-bottom: 0;
+  }
+
+  a {
+    color: #f2c426;
+  }
+
+  .copyright {
+    text-align: center;
+  }
+}

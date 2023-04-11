@@ -1,6 +1,6 @@
 import { createElement } from "react";
 import cx from "clsx";
-import styles from "./heading.module.css";
+import * as styles from "./heading.module.scss";
 
 const Heading = ({ children, className = "", variant = "h2", style = {}, ...props }) => {
   return createElement(variant, { className: cx(className, styles[variant]), style: style, ...props }, children);

@@ -1,6 +1,6 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import * as styles from "./LetHelp.module.css"
+import * as styles from "./LetHelp.module.scss"
 import { Facebook, WhatsAppIcon } from "../svgIcons/svgIcons"
 import { letsHelpData } from "../../StaticData/staticData"
 import { Link } from "gatsby"

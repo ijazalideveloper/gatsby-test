@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import * as styles from "./Sidebar.module.css"
+import * as styles from "./Sidebar.module.scss"
 import { HomeIcon, UserIcon } from "../svgIcons/svgIcons"
 
 export default function Sidebar({ openSheet, onClickHideShowSheet }) {
