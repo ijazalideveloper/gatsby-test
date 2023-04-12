@@ -1,13 +1,15 @@
 .btn {
-  background-color: green;
+  background-color: #bfa272;
   border: 1px solid transparent;
-  border-radius: 2px;
+  border-radius: 5px;
   color: #fff;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.72em 0.75em;
+  padding: 1em 1.3em;
   text-transform: capitalize;
+  letter-spacing: 0.24px;
+  cursor: pointer;
 
   > svg {
     flex: none;
@@ -17,7 +19,7 @@
 
   &:hover,
   &:focus {
-    background-color: shade($bg-footer, 10%);
+    background-color: shade(#000, 10%);
   }
 
   &:active {
@@ -58,18 +60,18 @@
   }
 }
 
-.default {
-  background-color: transparent;
-  color: var(--color_fasset_midgreen);
-  font-weight: 400;
+// .default {
+//   background-color: transparent;
+//   // color: var(--color_fasset_midgreen);
+//   font-weight: 400;
 
-  &:hover,
-  &:focus,
-  .active {
-    background-color: inherit;
-    // color: $link-color;
-  }
-}
+//   &:hover,
+//   &:focus,
+//   .active {
+//     background-color: inherit;
+//     // color: $link-color;
+//   }
+// }
 
 .sm {
   font-size: 0.875rem;
@@ -77,8 +79,8 @@
 }
 
 .lg {
-  font-size: 1.25rem;
-  padding: 0.7em 1em;
+  font-size: 1.2rem;
+  padding: 0.8em 2.5em;
 }
 
 .block {

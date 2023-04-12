@@ -1,0 +1,18 @@
+@use "../styles/_mixins/sizes" as *;
+
+.container {
+  --container-width: #{strip-units($container-width)};
+
+  max-width: calc(var(--container-width) * 1rem);
+  padding-inline: 1rem;
+  margin-inline: auto;
+  width: 100%;
+
+  @supports (padding: max(0px)) {
+    padding-inline: max(1rem, env(safe-area-inset-left)) max(1rem, env(safe-area-inset-right));
+  }
+
+  @include size-2xl-up {
+    --container-width: #{strip-units($container-width-xl)};
+  }
+}

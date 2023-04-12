@@ -1,9 +1,10 @@
 import React from "react"
-import { StaticImage } from "gatsby-plugin-image"
 import * as styles from "./LetHelp.module.scss"
 import { Facebook, WhatsAppIcon } from "../svgIcons/svgIcons"
 import { letsHelpData } from "../../StaticData/staticData"
 import { Link } from "gatsby"
+import Button from "../Common/Button"
+import LayoutGrid from "../base/layout-grid"
 
 export default function LetHelp() {
   return (
@@ -36,50 +37,12 @@ export default function LetHelp() {
                   </li>
                 </ul>
               )}
-              {btnText && <button>{btnText}</button>}
+              {btnText && <Button size="lg">{btnText}</Button>}
+              {/* <Button>Data</Button> */}
             </div>
           )
         }
       )}
-      {/* <div className={styles.box}>
-        {" "}
-        <StaticImage
-          src="https://i.ibb.co/1GTcwmk/logo.png"
-          loading="eager"
-          formats={["auto", "webp", "avif", "png"]}
-          alt=""
-        />
-        <h3>Support ticket</h3>
-        <p>
-          Raise a support ticket and our team will get back to you within 12
-          hours.
-        </p>
-        <button>Raise a support ticket</button>
-      </div>
-      <div className={styles.box}>
-        {" "}
-        <StaticImage
-          src="https://i.ibb.co/1GTcwmk/logo.png"
-          loading="eager"
-          formats={["auto", "webp", "avif", "png"]}
-          alt=""
-        />
-        <h3>FAQ’s</h3>
-        <p>Here are frequently asked questions. Might help you as well.</p>
-        <button>View FAQ’s</button>
-      </div>
-      <div className={styles.box}>
-        {" "}
-        <StaticImage
-          src="https://i.ibb.co/1GTcwmk/logo.png"
-          loading="eager"
-          formats={["auto", "webp", "avif", "png"]}
-          alt=""
-        />
-        <h3>Follow us</h3>
-        <p>Keep in touch with us on Our social channels.</p>
-        <button>Connect Now</button>
-      </div> */}
     </div>
   )
 }

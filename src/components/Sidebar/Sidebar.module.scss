@@ -11,9 +11,10 @@
     border-radius: 5px;
     fill: #d0d0d0;
     cursor: pointer;
+    margin-block-end: 15px;
 
     &.active,
-    :hover {
+    &:hover {
       fill: #916012;
       background-color: #fff2dd;
     }
