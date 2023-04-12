@@ -69,4 +69,27 @@ const letsHelpData = [
   },
 ]
 
-export { amentiesDataList, letsHelpData }
+const myPropertiesSlider = [
+  {
+    propId: "VRD/SD221/XR720B",
+    location: "DAMAC Hills 2",
+  },
+  {
+    propId: "VRD/SD221/XR720B",
+    location: "DAMAC Hills 2",
+  },
+  {
+    propId: "VRD/SD221/XR720B",
+    location: "DAMAC Hills 2",
+  },
+  {
+    propId: "VRD/SD221/XR720B",
+    location: "DAMAC Hills 2",
+  },
+  {
+    propId: "VRD/SD221/XR720B",
+    location: "DAMAC Hills 2",
+  },
+]
+
+export { amentiesDataList, letsHelpData, myPropertiesSlider }

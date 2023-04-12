@@ -160,3 +160,32 @@
   word-break: break-word;
   hyphens: auto;
 }
+
+.slick-dots {
+  bottom: -45px !important;
+
+  li {
+    margin: 0 !important;
+
+    &.slick-active {
+      margin-inline-end: 18px !important;
+      button {
+        width: 27px !important;
+        background: #000000 !important;
+        border-radius: 10px !important;
+      }
+    }
+
+    button {
+      padding: 0;
+      width: 9px !important;
+      height: 7px !important;
+      border-radius: 100%;
+      background: #d5d6d9 !important;
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+}

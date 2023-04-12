@@ -4,9 +4,11 @@ import Seo from "../components/seo"
 import Amenities from "../components/Amenities/Amenities"
 import Layout from "../components/Layout/Layout"
 import LetHelp from '../components/LetHelp/LetHelp';
+import MyProperties from '../components/MyProperties/MyProperties';
 
 const IndexPage = () => (
   <Layout>
+    <MyProperties />
     <LetHelp />
     <Amenities />
   </Layout>
